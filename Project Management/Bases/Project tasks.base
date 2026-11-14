@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.inFolder("Project Management/Tasks")'
+    - 'type == "task"'
+    - 'this.type == "project"'
+    - 'projects.isType("list") && projects.contains(this.file.asLink())'
+views:
+  - type: table
+    name: Project tasks
+    order: [file.name, title, status, due, owner, depends_on]
+  - type: table
+    name: Open project tasks
+    filters: '["todo", "doing", "blocked"].contains(status)'
+    order: [file.name, title, status, due, owner]

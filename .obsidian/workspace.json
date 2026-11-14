@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "34fc2cc56759c47b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8764d0dea6599623",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9af21bb0d638a4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Project Management/Templates/Project.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ce9d5b8fc62f9f8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f96327cd154f765",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "508867b3c3e5ceff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "14398af56d54f10d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "98aa440a23ffa951",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 201.5
+  },
+  "right": {
+    "id": "aedfce37737f82a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "bce8d61f5385d750",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70bc124dc919861d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Project Management/Templates/Project.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "8929c90a3cca9f35",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Project Management/Templates/Project.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "dbf41a79f062bbc0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "38c3ab174de8b67f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "cac68e63d1158fe1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Project Management/Templates/Project.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f9af21bb0d638a4b",
+  "lastOpenFiles": [
+    "Agent System/Decisions/2026-11-13-reference-information.md",
+    "Project Management/Decisions",
+    "Project Management/References",
+    "Project Management/Bases/Project decisions.base",
+    "Project Management/Bases/References.base",
+    "Project Management/Templates/Project Decision.md",
+    "Project Management/Templates/Reference.md",
+    "Project Management/Templates/Task.md",
+    "Agent System/system/vault-model.md",
+    "Agent System/Decisions/2026-11-13-shared-tasks.md",
+    "Project Management/Templates/Project.md",
+    "Project Management/Home.md",
+    "Agent System/system/regression-scenarios.md",
+    "scripts/USAGE.md",
+    "Agent System/Decisions/2026-11-13-folder-layout.md",
+    "Project Management/Reviews",
+    "Project Management/Inbox",
+    "Project Management/Tasks",
+    "Project Management/Projects",
+    "Project Management/Templates",
+    "Project Management/Dashboards/Overview.md",
+    "Project Management/Dashboards",
+    "Agent System/Decisions/2026-11-13-vault-capabilities.md",
+    "Agent System/Decisions/2026-11-13-native-bases.md",
+    "Agent System/scripts/USAGE.md",
+    "Agent System/system/ownership.md",
+    "Agent System/agents/vault-architect.md",
+    "Agent System/agents/project-manager.md",
+    "Dashboards/Overview.md",
+    "AGENTS.md",
+    "Decisions/2026-11-13-native-bases.md",
+    "Templates/Project.md",
+    "Home.md",
+    "system/vault-model.md",
+    "system/ownership.md",
+    "Decisions/2026-11-13-vault-capabilities.md"
+  ]
+}

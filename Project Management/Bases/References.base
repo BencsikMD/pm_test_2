@@ -1,0 +1,30 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.inFolder("Project Management/References")'
+    - 'type == "reference"'
+views:
+  - type: table
+    name: All references
+    order: [file.name, title, projects, source_tasks]
+  - type: table
+    name: Project references
+    filters:
+      and:
+        - 'this.type == "project"'
+        - 'projects.isType("list") && projects.contains(this.file.asLink())'
+    order: [file.name, title, source_tasks]
+  - type: table
+    name: Task inputs
+    filters:
+      and:
+        - 'this.type == "task"'
+        - 'this.references.isType("list") && this.references.contains(file.asLink())'
+    order: [file.name, title, projects, source_tasks]
+  - type: table
+    name: Task outputs
+    filters:
+      and:
+        - 'this.type == "task"'
+        - 'source_tasks.isType("list") && source_tasks.contains(this.file.asLink())'
+    order: [file.name, title, projects]

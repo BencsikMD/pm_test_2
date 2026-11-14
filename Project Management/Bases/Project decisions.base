@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.inFolder("Project Management/Decisions")'
+    - 'type == "project-decision"'
+views:
+  - type: table
+    name: All decisions
+    order: [file.name, title, status, date, projects, references]
+  - type: table
+    name: Project decisions
+    filters:
+      and:
+        - 'this.type == "project"'
+        - 'projects.isType("list") && projects.contains(this.file.asLink())'
+    order: [file.name, title, status, date, references]

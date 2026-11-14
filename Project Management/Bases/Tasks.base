@@ -1,0 +1,66 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Project Management/Tasks")
+    - type == "task"
+formulas:
+  open: '["todo", "doing", "blocked"].contains(status)'
+properties:
+  file.name:
+    displayName: Task
+views:
+  - type: table
+    name: Open tasks
+    filters: formula.open
+    order:
+      - file.name
+      - title
+      - projects
+      - status
+      - due
+      - owner
+  - type: table
+    name: Overdue
+    filters:
+      and:
+        - formula.open
+        - due
+        - date(due) < today()
+    order:
+      - file.name
+      - projects
+      - status
+      - due
+      - owner
+  - type: table
+    name: Upcoming
+    filters:
+      and:
+        - formula.open
+        - due
+        - date(due) >= today()
+        - date(due) <= today() + "7d"
+    order:
+      - file.name
+      - projects
+      - status
+      - due
+      - owner
+  - type: table
+    name: Blocked
+    filters: status == "blocked"
+    order:
+      - file.name
+      - projects
+      - due
+      - depends_on
+      - owner
+  - type: table
+    name: All tasks
+    order:
+      - file.name
+      - title
+      - projects
+      - status
+      - due
+      - owner

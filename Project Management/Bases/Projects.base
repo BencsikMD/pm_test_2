@@ -1,0 +1,42 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Project Management/Projects")
+    - type == "project"
+formulas:
+  next_actions: file.backlinks.filter(file(value).inFolder("Project Management/Tasks") && file(value).properties.type == "task" && file(value).properties.projects.isType("list") && file(value).properties.projects.contains(file.asLink()) && ["todo", "doing", "blocked"].contains(file(value).properties.status)).length
+properties:
+  file.name:
+    displayName: Project
+  formula.next_actions:
+    displayName: Open next actions
+views:
+  - type: table
+    name: Active projects
+    filters: status == "active"
+    order:
+      - file.name
+      - title
+      - status
+      - due
+      - owner
+  - type: table
+    name: All projects
+    order:
+      - file.name
+      - title
+      - status
+      - due
+      - owner
+  - type: table
+    name: Missing next actions
+    filters:
+      and:
+        - status == "active"
+        - formula.next_actions == 0
+    order:
+      - file.name
+      - title
+      - formula.next_actions
+      - due
+      - owner
